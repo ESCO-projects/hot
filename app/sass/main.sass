@@ -1,0 +1,373 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5,
+h6, p, blockquote, pre,a, abbr, acronym, address, big,
+cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small,
+strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt,
+dd, ol, ul, li,fieldset, form, label, legend,table, caption,
+tbody, tfoot, thead, tr, th, td,article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary,time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  vertical-align: baseline
+html
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+img,fieldset, a img
+  border: none
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea
+  -webkit-appearance: none
+input[type="submit"],
+button
+  cursor: pointer
+  &::-moz-focus-inner
+    padding: 0
+    border: 0
+textarea
+  overflow: auto
+input, button
+  margin: 0
+  padding: 0
+  border: 0
+div, input, textarea, select,button,
+h1,h2,h3,h4,h5,h6,a,span,a:focus
+  outline: none
+  text-decoration: none
+ul,ol
+  list-style-type: none
+table
+  border-spacing: 0
+  border-collapse: collapse
+  width: 100%
+html
+  box-sizing: border-box
+*, *:before, *:after
+  box-sizing: inherit
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.light_f
+  font-family: $ExoLight
+  font-weight: lighter
+.medium_f
+  font-family: $ExoMedium
+  font-weight: 500
+.bold_f
+  font-family: $ExoBold
+  font-weight: bold
+
+.particles
+  position: absolute
+  top: -35%
+  left: 70px
+  height: 135%
+  max-width: 680px
+  width: 100%
+
+.part
+  position: relative
+  width: 100%
+  height: 100%
+  div
+    background-repeat: no-repeat
+    position: absolute
+    width: 100%
+    height: 100%
+    animation-duration: 3s
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+    background-position: 0% -20%
+  &__1
+    animation-name: rain1
+    animation-delay: 0s
+    background-image: url(../img/a1.svg)
+  &__11
+    animation-name: rain8
+    animation-delay: 0.2s
+    background-image: url(../img/a6.svg)
+  &__2
+    animation-name: rain2
+    animation-delay: 0.6s
+    background-image: url(../img/a2.svg)
+  &__3
+    animation-name: rain3
+    animation-delay: 1s
+    background-image: url(../img/a3.svg)
+  &__3
+    animation-name: rain1
+    animation-delay: 1.3s
+    background-image: url(../img/a1.svg)
+  &__4
+    animation-name: rain4
+    animation-delay: 1.6s
+    background-image: url(../img/a4.svg)
+  &__44
+    animation-name: rain8
+    animation-delay: 2s
+    background-image: url(../img/a7.svg)
+  &__5
+    animation-delay: 1.8s
+    animation-name: rain5
+    background-image: url(../img/a5.svg)
+  &__6
+    animation-delay: 2.3s
+    animation-name: rain6
+    background-image: url(../img/a6.svg)
+  &__7
+    animation-delay: 2.5s
+    animation-name: rain7
+    background-image: url(../img/a7.svg)
+  &__8
+    animation-delay: 2.8s
+    animation-name: rain8
+    background-image: url(../img/a8.svg)
+
+@keyframes rain1
+  0%
+    background-position: 0% -10%
+  100%
+    background-position: 30% 200%
+
+@keyframes rain2
+  0%
+    background-position: 50% -10%
+  100%
+    background-position: 45% 200%
+
+@keyframes rain3
+  0%
+    background-position: 25% -10%
+  100%
+    background-position: 95% 200%
+
+@keyframes rain4
+  0%
+    background-position: 35% -10%
+  100%
+    background-position: 65% 200%
+
+@keyframes rain5
+  0%
+    background-position: 35% -10%
+  100%
+    background-position: 55% 200%
+
+@keyframes rain6
+  0%
+    background-position: 45% -10%
+  100%
+    background-position: 65% 200%
+
+@keyframes rain7
+  0%
+    background-position: 65% -10%
+  100%
+    background-position: 75% 200%
+
+@keyframes rain8
+  0%
+    background-position: 75% -10%
+  100%
+    background-position: 95% 200%
+
+.wrapper
+  max-width: 100%
+  overflow: hidden
+  height: 100vh
+  min-height: 750px
+  background-size: cover
+  box-shadow: inset 150px -150px 150px 50px #fff
+  background: url(../img/bg.jpg) no-repeat 0 center
+  background-color: #f2f2f2
+
+.head
+  height: 50vh
+  position: relative
+  margin: 0 70px
+  z-index: 3
+  &__logo
+    position: absolute
+    right: 20px
+    top: 25px
+    display: block
+    max-width: 110px
+    height: 90px
+    z-index: 2
+    img
+      display: block
+      width: 100%
+      height: auto
+  &__main
+    width: 690px
+    height: 450px
+    float: left
+    text-align: center
+    background: url(../img/red.svg) no-repeat
+    background-size: contain
+    padding: 20px
+    border-radius: 3% 3% 34% 34%
+    h1
+      line-height: 1.2
+      color: #fff
+      font-size: 32px
+      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.16)
+  &__ico-wrap
+    display: inline-block
+    margin-top: 25px
+    opacity: 0
+    p
+      font-size: 20px
+      font-family: $ExoLight
+      color: #fff
+      line-height: 1.2
+      margin-top: -10px
+  &__ico
+    width: 160px
+    height: 130px
+    background-repeat: no-repeat
+    background-size: contain
+    background-image: url(../img/oval.svg)
+    padding: 28px 0 0 45px
+    margin: 0 auto
+    position: relative
+    img
+      position: relative
+      z-index: 9
+      display: block
+      max-width: 60px
+  &__bottom
+    padding-top: 40px
+    line-height: 1.2
+    span
+      color: #FFFFFF
+      &:first-child
+        font-size: 23px
+        text-shadow: 0 0 12.48px rgba(243, 100, 99, 0.004)
+      &:last-child
+        font-size: 19px
+
+.content
+  height: 50vh
+  min-height: 355px
+  width: 100%
+  position: relative
+  
+.hot
+  text-align: left
+  padding-top: 30px
+  padding-left: 20%
+  &__list-title
+    font-size: 24px
+    color: #d91a22
+    padding-left: 110px
+    font-family: $ExoBold
+    position: relative
+    &::before
+      position: absolute
+      left: 8px
+      top: 20px
+      content: ''
+      width: 90px
+      height: 20px
+      border: 2px solid
+      border-radius: 6px 0 0 0
+      border-color: #cdcdcd transparent transparent #cdcdcd
+  &__list
+    li
+      font-size: 22px
+      position: relative
+      line-height: 1.2
+      color: #3d3d3d
+      padding-left: 31px
+      margin: 5px 0
+      opacity: 0
+      transform: translateX(100px)
+      transition: all 1s ease
+    li.active
+      opacity: 1
+      transform: translateX(0)
+      &::after
+        position: absolute
+        content: ''
+        left: 0
+        top: 5px
+        width: 19px
+        height: 19px
+        background: url(../img/check.svg) no-repeat
+
+.form
+  position: absolute
+  bottom: -5px
+  right: 20%
+  max-width: 300px
+  width: 100%
+  min-height: 355px
+  background-color: #fff
+  box-shadow: 0 0 25px 0 rgba(0,0,0,0.6)
+  border-radius: 6px 6px 0 0
+  &__title
+    padding: 10px
+    font-size: 26px
+    line-height: 1
+    min-height: 70px
+    background-color: #e62a25
+    text-align: center
+    color: #FFFFFF
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4)
+    font-family: ExoMedium, sans-serif
+    border-radius: 6px 6px 0 0
+    margin-bottom: 25px
+    span
+      font-family: $ExoLight
+      font-size: 18px
+      font-weight: lighter
+  form,label,input,button
+    display: block
+  label
+    max-width: 240px
+    height: 34px
+    margin: 0 auto 25px
+  input
+    padding: 12px
+  input
+    width: 100%
+    height: 100%
+    background-color: #f2f2f2
+    border: 1px solid #e9e9e9
+    border-radius: 6px
+    color: #666666
+    font-size: 16px
+    font-family: $ExoLight, sans-serif
+    font-weight: lighter
+  button
+    margin: 27px auto
+    width: 228px
+    height: 44px
+    color: #FFFFFF
+    font-size: 18px
+    text-align: center
+    font-family: $ExoMedium, sans-serif
+    font-weight: normal
+    border-radius: 22px
+    background-color: #e62a25
+    box-shadow: 0 3px 9px 0 rgba(217, 25, 33, 0.47)
+
+
+
+
+
+@import "media" // Всегда в конце

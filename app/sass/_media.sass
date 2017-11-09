@@ -1,0 +1,144 @@
+@import "vars"
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-height : 750px)
+  .wrapper,.content,.head
+    height: auto
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+  .wrapper
+    background-size: contain
+    background-position: 145% bottom
+    box-shadow: inset 380px -50px 150px 50px #fff
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1200px)
+  .wrapper
+    background: url(../img/bg_m.jpg) no-repeat 0% bottom
+    background-size: cover
+  .head__main
+    width: 600px
+    height: 400px
+    padding: 10px
+  .hot
+    padding-left: 10%
+  .hot__list
+    li
+      font-size: 20px
+  .form
+    right: 10%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .wrapper
+    background-image: none
+    box-shadow: none
+  .head
+    margin: 0
+  .particles
+    position: fixed
+    left: 0
+    max-width: 100%
+  .head__logo
+    right: 50%
+    margin-right: -55px
+    top: 15px
+  .head__main
+    padding-top: 50px
+    width: 100%
+    height: auto
+    max-width: 550px
+    min-height: 450px
+    margin: 120px auto 0
+    float: none
+    background-image: url(../img/red_full.svg)
+  .hot
+    max-width: 550px
+    margin: 20px auto
+    padding-left: 0
+  .hot__list
+    li
+      font-size: 22px
+  .form
+    margin-right: -150px
+    right: 50%
+    left: auto
+    animation: none
+    min-height: 310px
+    border-radius: 6px
+    bottom: 25px
+  .head__ico-wrap
+    opacity: 1
+    animation: none!important
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 600px)
+  .head__main
+    background-image: none
+    background-color: transparent
+    border-radius: 0
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      left: -5%
+      top: 0
+      width: 110%
+      height: 100%
+      z-index: -1
+      background-color: #e52925
+  .hot
+    padding: 15px 15px 0
+    margin: 0 auto
+  .hot__list
+    li
+      font-size: 20px
+  .content
+    min-height: 320px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .head__main
+    min-height: 390px
+    padding: 20px 15px
+    h1
+      font-size: 27px
+  .content
+    padding: 15px 5px 0
+    min-height: 330px
+  .hot__list-title
+    padding-left: 90px
+    &::before
+      width: 70px
+  .hot__list
+    li
+      margin: 10px 0
+      padding-left: 22px
+      font-size: 18px
+      &::after
+        top: 2px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 414px)
+	.hot__list
+    li,li.active
+      font-size: 16px
+      padding-left: 15px
+      &::after
+        left: -5px
+        top: 3px
+        width: 16px
+        height: 16px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 2000px)
+  .wrapper
+    background-size: cover
+    background-position: center center
+    box-shadow: inset 380px -50px 150px 50px #fff
+
