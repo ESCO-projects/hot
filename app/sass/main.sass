@@ -260,6 +260,25 @@ body
       &:last-child
         font-size: 19px
 
+.plus
+  position: relative
+  &::after,&::before
+    content: ''
+    position: absolute
+    background-color: #FFF
+  &::after
+    right: -25px
+    bottom: 67px
+    width: 24px
+    height: 6px
+  &::before
+    right: -16px
+    bottom: 58px
+    height: 24px
+    width: 6px
+    
+
+
 .content
   height: 50vh
   min-height: 355px
